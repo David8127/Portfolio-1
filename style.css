@@ -61,7 +61,6 @@ nav a {
     padding: 10%;
     background-size: cover;
     background-image: url(https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-kod/sta-je-kod.jpg);
-    object-position:
 }
 
 .banner div {
@@ -110,8 +109,19 @@ p {
 .flex-item {
     border: 7px solid var(--royalblue);
     margin: 20px;
-    padding: 70px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-end;
+}
 
+.flex-item div {
+    background-color: var(--royalblue);
+    padding: 15px 15px;
+}   
+
+.flex-item h3 {
+    color: var(--light);
+    background-color: var(--royalblue);
 }
 
 .flex-item:first-child {
@@ -122,22 +132,41 @@ p {
     flex: 1;
 }
 
+#contact-me address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-me address a {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+
 /*Portfolio Images*/
 
 .first-app {
-    background-image: url();
+    background-image: url(https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/4400/personal-computer-clipart-xl.png);
+    background-size: cover;
+    padding-bottom: 200px;
 }
 
 .second-app {
-    background-image: url();
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-8Gn6-8cUwiIpofzlKyPdW4KNTDMm6lN3A&usqp=CAU);
+    background-size: cover;
 }
 
 .calculator {
-    background-image: url();
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwO4nPFw76zl6vIFZwiCLLH9ZIrK22SDWDw&usqp=CAU);
+    background-size: cover;
 }
 
 .GOT {
-    background-image: url();
+    background-image: url(https://i0.wp.com/www.fantasticmaps.com/wp-content/uploads/2013/03/World_Of_Ice_And_Fire.jpg?resize=625%2C416);
 }
 
 
