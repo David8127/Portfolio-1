@@ -72,7 +72,8 @@ nav a {
     padding: 10px 10px;
     color: var(--royalblue);
     background-color: aliceblue;
-    display: inline;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 main {
@@ -150,9 +151,9 @@ p {
 /*Portfolio Images*/
 
 .first-app {
-    background-image: url(https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/4400/personal-computer-clipart-xl.png);
-    background-size: cover;
-    padding-bottom: 200px;
+    background-image: url("CarryOn\ Main.JPG");
+    background-size:cover;
+    padding: 150px;
 }
 
 .second-app {
@@ -173,5 +174,28 @@ p {
 /* end of portfolio images */
 
 
-/*Add media queries*/ /*maybe for h1?*/
+/*media queries*/ 
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+      }
 
+      header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        font-size: 45px;
+        justify-content: center;
+      }
+
+    nav {
+        justify-content: center;
+    }
+
+@media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+        flex-basis: 100%;
+    }
